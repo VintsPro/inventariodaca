@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> <style>
+        body { background: #f4f7fe; padding: 20px; }
+    </style>
+</head>
+<body>
+    <section id="dashboard" class="section">
+      <div class="section-title">
+        <h2>Resumen General</h2>
+        <button class="btn btn-filter">Filtrar</button>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card stat-card">
+          <span class="icon">📦</span>
+          <h3>120</h3>
+          <p>Total de productos</p>
+        </div>
+        <div class="card stat-card warning">
+          <span class="icon">⚠️</span>
+          <h3>9</h3>
+          <p>Stock bajo</p>
+        </div>
+        </div>
+
+      <div class="dashboard-layout">
+        <div class="card">
+          <div class="card-header">
+            <h3>Productos recientes</h3>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Producto</th>
+                  <th>Stock</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>P001</td>
+                  <td>Teclado Mecánico</td>
+                  <td>25</td>
+                  <td><span class="badge badge-success">Disponible</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimientos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- =========================
+         MOVIMIENTOS
+    ========================== -->
+    <section id="movimientos" class="section">
+      <div class="section-title">
+        <h2>Movimientos de Inventario</h2>
+      </div>
+
+      <div class="card form-card">
+        <h3>Registrar Movimiento</h3>
+        <form class="form-grid">
+          <div class="form-group">
+            <label>Producto</label>
+            <select><option>Seleccionar producto</option></select>
+          </div>
+
+          <div class="form-group">
+            <label>Ubicación</label>
+            <select><option>Seleccionar ubicación</option></select>
+          </div>
+
+          <div class="form-group">
+            <label>Tipo de movimiento</label>
+            <select>
+              <option>Entrada</option>
+              <option>Salida</option>
+              <option>Ajuste</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Cantidad</label>
+            <input type="number" placeholder="Ej: 10" />
+          </div>
+
+          <div class="form-group">
+            <label>Usuario</label>
+            <select><option>Administrador</option></select>
+          </div>
+
+          <div class="form-group">
+            <label>Proveedor</label>
+            <select><option>Distribuciones DACA</option></select>
+          </div>
+
+          <div class="form-group">
+            <label>Conteo</label>
+            <select><option>Conteo #001</option></select>
+          </div>
+
+          <div class="form-group full-width">
+            <label>Observación</label>
+            <textarea placeholder="Escribe una observación..."></textarea>
+          </div>
+        </form>
+
+        <div class="form-actions">
+          <button class="btn btn-save">Guardar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Historial de Movimientos</h3>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Producto</th>
+                <th>Ubicación</th>
+                <th>Tipo</th>
+                <th>Cantidad</th>
+                <th>Usuario</th>
+                <th>Observación</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>25/03/2026</td>
+                <td>SSD 1TB</td>
+                <td>Rack 1</td>
+                <td><span class="badge badge-success">Entrada</span></td>
+                <td>10</td>
+                <td>Administrador</td>
+                <td>Ingreso por compra</td>
+              </tr>
+              <tr>
+                <td>25/03/2026</td>
+                <td>Mouse</td>
+                <td>Bodega B</td>
+                <td><span class="badge badge-danger">Salida</span></td>
+                <td>3</td>
+                <td>Operador</td>
+                <td>Salida por entrega interna</td>
+              </tr>
+              <tr>
+                <td>25/03/2026</td>
+                <td>Monitor</td>
+                <td>Estante 2</td>
+                <td><span class="badge badge-info">Ajuste</span></td>
+                <td>1</td>
+                <td>Supervisor</td>
+                <td>Corrección de conteo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

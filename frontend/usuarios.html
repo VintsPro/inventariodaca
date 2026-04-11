@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- =========================
+         USUARIOS
+    ========================== -->
+    <section id="usuarios" class="section">
+      <div class="section-title">
+        <h2>Gestión de Usuarios</h2>
+      </div>
+
+      <div class="card form-card">
+        <h3>Registrar Usuario</h3>
+        <form class="form-grid">
+          <div class="form-group">
+            <label>Persona</label>
+            <select>
+              <option>Seleccionar persona</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Nombre de usuario</label>
+            <input type="text" placeholder="Ej: admin_daca" />
+          </div>
+
+          <div class="form-group">
+            <label>Contraseña</label>
+            <input type="password" placeholder="********" />
+          </div>
+
+          <div class="form-group">
+            <label>Rol</label>
+            <select>
+              <option>Administrador</option>
+              <option>Operador</option>
+              <option>Supervisor</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Estado</label>
+            <select>
+              <option>Activo</option>
+              <option>Inactivo</option>
+            </select>
+          </div>
+        </form>
+
+        <div class="form-actions">
+          <button class="btn btn-save">Guardar</button>
+          <button class="btn btn-edit">Editar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Listado de Usuarios</h3>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Usuario</th>
+                <th>Persona</th>
+                <th>Rol</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>admin_daca</td>
+                <td>Vicente Petro</td>
+                <td>Administrador</td>
+                <td><span class="badge badge-success">Activo</span></td>
+                <td class="actions">
+                  <button class="btn btn-edit">Editar</button>
+                  <button class="btn btn-delete">Eliminar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

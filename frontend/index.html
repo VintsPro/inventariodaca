@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventario Daca</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Estilo básico para que el iframe ocupe todo el espacio */
+      .main-content {
+        padding: 0; /* Quitamos padding para que el iframe llene el espacio */
+        overflow: hidden;
+      }
+      iframe {
+        width: 100%;
+        height: calc(100vh - 70px); /* Ajusta restando la altura de tu topbar */
+        border: none;
+      }
+
+      /* Dale flexibilidad al iframe */
+      iframe {
+        flex-grow: 1; /* Esto hace que el iframe "empuje" hasta el fondo */
+        width: 100%;
+        border: none;
+        border-radius: var(
+          --radius
+        ); /* Para que mantenga la estética de tus tarjetas */
+        background: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <h2>📦 Inventario DACA</h2>
+        <p>Panel de gestión</p>
+      </div>
+
+      <nav class="menu">
+        <a
+          href="dashboard_home.html"
+          target="contenedor"
+          class="menu-item active"
+          >🏠 Dashboard</a
+        >
+        <a href="personas.html" target="contenedor" class="menu-item"
+          >👤 Personas</a
+        >
+        <a href="usuarios.html" target="contenedor" class="menu-item"
+          >🧑‍💼 Usuarios</a
+        >
+        <a href="proveedores.html" target="contenedor" class="menu-item"
+          >🚚 Proveedores</a
+        >
+        <a href="categorias.html" target="contenedor" class="menu-item"
+          >🗂️ Categorías</a
+        >
+        <a href="productos.html" target="contenedor" class="menu-item"
+          >📦 Productos</a
+        >
+                <a href="ubicaciones.html" target="contenedor" class="menu-item"
+          >📍 Ubicaciones</a
+        >
+                <a href="inventario.html" target="contenedor" class="menu-item"
+          >📊 Inventario</a
+        >
+                <a href="movimientos.html" target="contenedor" class="menu-item"
+          >🔄 Movimientos</a
+        >
+                <a href="conteos.html" target="contenedor" class="menu-item"
+          >📝 Conteos</a
+        >
+                <a href="reportes.html" target="contenedor" class="menu-item"
+          >📁 Reportes</a
+        >
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h1>Inventario DACA</h1>
+          <p>Bienvenido al sistema de control</p>
+        </div>
+        <div class="topbar-right">
+          <div class="user-box">
+            <div class="user-info">
+              <h4>Vicente Petro</h4>
+              <span>Administrador</span>
+            </div>
+            <div class="avatar">VP</div>
+          </div>
+        </div>
+      </header>
+
+      <iframe src="dashboard_home.html" name="contenedor"></iframe>
+    </main>
+  </body>
+</html>

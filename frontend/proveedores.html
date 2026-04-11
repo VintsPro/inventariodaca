@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- =========================
+         PROVEEDORES
+    ========================== -->
+    <section id="proveedores" class="section">
+      <div class="section-title">
+        <h2>Gestión de Proveedores</h2>
+      </div>
+
+      <div class="card form-card">
+        <h3>Registrar Proveedor</h3>
+        <form class="form-grid">
+          <div class="form-group">
+            <label>Persona</label>
+            <select>
+              <option>Seleccionar persona</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Empresa</label>
+            <input type="text" placeholder="Ej: Distribuciones DACA" />
+          </div>
+        </form>
+
+        <div class="form-actions">
+          <button class="btn btn-save">Guardar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Listado de Proveedores</h3>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Empresa</th>
+                <th>Nombre del proveedor</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Distribuciones DACA</td>
+                <td>Carlos Ramírez</td>
+                <td>3001112233</td>
+                <td>carlos@daca.com</td>
+                <td class="actions">
+                  <button class="btn btn-edit">Editar</button>
+                  <button class="btn btn-delete">Eliminar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

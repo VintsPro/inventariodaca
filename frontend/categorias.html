@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- =========================
+         CATEGORÍAS
+    ========================== -->
+    <section id="categorias" class="section">
+      <div class="section-title">
+        <h2>Gestión de Categorías</h2>
+      </div>
+
+      <div class="card form-card">
+        <h3>Registrar Categoría</h3>
+        <form class="form-grid">
+          <div class="form-group">
+            <label>Nombre de categoría</label>
+            <input type="text" placeholder="Ej: Electrónica" />
+          </div>
+        </form>
+
+        <div class="form-actions">
+          <button class="btn btn-save">Guardar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Listado de Categorías</h3>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Estado / Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Electrónica</td>
+                <td class="actions">
+                  <span class="badge badge-success">Activa</span>
+                  <button class="btn btn-edit">Editar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

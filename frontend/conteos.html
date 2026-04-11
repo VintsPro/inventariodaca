@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- =========================
+         CONTEOS
+    ========================== -->
+    <section id="conteos" class="section">
+      <div class="section-title">
+        <h2>Conteo de Inventario</h2>
+      </div>
+
+      <div class="card form-card">
+        <h3>Registrar Conteo</h3>
+        <form class="form-grid">
+          <div class="form-group">
+            <label>Fecha</label>
+            <input type="date" />
+          </div>
+
+          <div class="form-group">
+            <label>Usuario</label>
+            <select>
+              <option>Administrador</option>
+              <option>Operador</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Estado</label>
+            <select>
+              <option>ABIERTO</option>
+              <option>EN PROCESO</option>
+              <option>CERRADO</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label>Observación</label>
+            <textarea placeholder="Escribe una observación..."></textarea>
+          </div>
+        </form>
+
+        <div class="form-actions">
+          <button class="btn btn-save">Guardar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Listado de Conteos</h3>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>ID Conteo</th>
+                <th>Fecha</th>
+                <th>Usuario</th>
+                <th>Estado</th>
+                <th>Observación</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>25/03/2026</td>
+                <td>Administrador</td>
+                <td><span class="badge badge-warning">ABIERTO</span></td>
+                <td>Conteo mensual de bodega</td>
+                <td class="actions">
+                  <button class="btn btn-edit">Editar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>24/03/2026</td>
+                <td>Operador</td>
+                <td><span class="badge badge-info">EN PROCESO</span></td>
+                <td>Verificación parcial</td>
+                <td class="actions">
+                  <button class="btn btn-edit">Editar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td>20/03/2026</td>
+                <td>Supervisor</td>
+                <td><span class="badge badge-success">CERRADO</span></td>
+                <td>Conteo final aprobado</td>
+                <td class="actions">
+                  <button class="btn btn-edit">Ver</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
