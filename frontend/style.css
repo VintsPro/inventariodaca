@@ -176,6 +176,13 @@ body {
   margin-bottom: 40px;
 }
 
+/*todo se adacte al ancho de la pantalla con margenes en lados*/
+.section {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
 .section-title {
   display: flex;
   justify-content: space-between;
