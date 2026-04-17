@@ -2,37 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"> <style>
-        body { background: #f4f7fe; padding: 20px; }
+    <link rel="stylesheet" href="style.css"> 
+
+    <!-- Conecta el archivo de estilos externo -->
+    <style>
+
+    /* Estilos internos (solo para esta página) */      
+        body { background: #f4f7fe; /* Color de fondo */
+           padding: 20px; /* Espacio interno alrededor del contenido */
+           }
     </style>
 </head>
 <body>
+    
+    <!-- Sección principal del dashboard -->
     <section id="dashboard" class="section">
+
+    <!-- Título y botón de filtro -->  
       <div class="section-title">
         <h2>Resumen General</h2>
-        <button class="btn btn-filter">Filtrar</button>
+    <!-- Título de la sección -->    
+        
+      <button class="btn btn-filter">Filtrar</button>
+
+    <!-- Botón para aplicar filtros -->
       </div>
 
+    <!-- Contenedor de tarjetas de estadísticas -->  
       <div class="cards-grid">
+
+    <!-- Tarjeta: Total de productos -->    
         <div class="card stat-card">
           <span class="icon">📦</span>
+    <!-- Icono visual -->      
           <h3>120</h3>
+    <!-- Número principal -->      
           <p>Total de productos</p>
+    <!-- Descripción -->
         </div>
+
+    <!-- Tarjeta: Stock bajo -->    
         <div class="card stat-card warning">
+    <!-- "warning" probablemente cambia el color (ej: rojo o amarillo) -->
+
           <span class="icon">⚠️</span>
           <h3>9</h3>
           <p>Stock bajo</p>
         </div>
         </div>
 
+    <!-- Layout principal del dashboard -->    
       <div class="dashboard-layout">
+
+    <!-- Tarjeta que contiene la tabla -->
         <div class="card">
+
+    <!-- Encabezado de la tarjeta -->      
           <div class="card-header">
             <h3>Productos recientes</h3>
           </div>
+
+    <!-- Contenedor responsivo para la tabla -->      
           <div class="table-responsive">
+
+    <!-- Tabla de productos -->        
             <table>
+
+    <!-- Encabezado de la tabla -->          
               <thead>
                 <tr>
                   <th>Código</th>
@@ -41,12 +77,22 @@
                   <th>Estado</th>
                 </tr>
               </thead>
+
+    <!-- Cuerpo de la tabla -->          
               <tbody>
                 <tr>
                   <td>P001</td>
+    <!-- Código del producto -->
+                  
                   <td>Teclado Mecánico</td>
+    <!-- Nombre del producto -->
+
                   <td>25</td>
+    <!-- Cantidad disponible -->
+
                   <td><span class="badge badge-success">Disponible</span></td>
+    <!-- Etiqueta visual de estado -->
+
                 </tr>
               </tbody>
             </table>

@@ -1,31 +1,35 @@
 /* =========================
    RESET Y VARIABLES
 ========================== */
+
+/* Reinicia estilos por defecto del navegador */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Incluye padding y border en el tamaño */
 }
 
+/* Variables globales (colores, tamaños, etc.) */
 :root {
-  --primary: #0f172a;
-  --primary-light: #1e293b;
-  --secondary: #0ea5e9;
-  --accent: #22c55e;
-  --danger: #ef4444;
-  --warning: #f59e0b;
-  --info: #3b82f6;
-  --bg: #f1f5f9;
+  --primary: #0f172a;        /* Color principal (oscuro) */
+  --primary-light: #1e293b;  /* Variación del principal */
+  --secondary: #0ea5e9;      /* Azul principal */
+  --accent: #22c55e;         /* Verde (éxito) */
+  --danger: #ef4444;         /* Rojo (errores) */
+  --warning: #f59e0b;        /* Amarillo (alerta) */
+  --info: #3b82f6;           /* Azul info */
+  --bg: #f1f5f9;             /* Fondo general */
   --white: #ffffff;
   --gray: #64748b;
   --gray-light: #e2e8f0;
   --text: #1e293b;
   --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-  --radius: 18px;
+  --radius: 18px;              /* Bordes redondeados */
   --transition: all 0.3s ease;
   --sidebar-width: 270px;
 }
 
+/* Estilo general */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--bg);
@@ -35,19 +39,20 @@ body {
 }
 
 /* =========================
-   SIDEBAR
+   SIDEBAR (MENÚ LATERAL)
 ========================== */
 .sidebar {
   width: var(--sidebar-width);
   background: linear-gradient(180deg, var(--primary), var(--primary-light));
   color: var(--white);
   padding: 28px 20px;
-  position: fixed;
+  position: fixed; /* Se queda fija */
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: auto; /* Scroll si es necesario */
   box-shadow: var(--shadow);
 }
 
+/* Parte superior del sidebar */
 .sidebar-top {
   margin-bottom: 30px;
 }
@@ -62,12 +67,14 @@ body {
   font-size: 0.95rem;
 }
 
+/* Menú */
 .menu {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+/* Items del menú */
 .menu-item {
   text-decoration: none;
   color: #e2e8f0;
@@ -77,18 +84,19 @@ body {
   font-weight: 500;
 }
 
+/* Hover y activo */
 .menu-item:hover,
 .menu-item.active {
   background: rgba(255, 255, 255, 0.12);
-  transform: translateX(4px);
+  transform: translateX(4px); /* Efecto de desplazamiento */
   color: var(--white);
 }
 
 /* =========================
-   MAIN CONTENT
+   CONTENIDO PRINCIPAL
 ========================== */
 .main-content {
-  margin-left: var(--sidebar-width);
+  margin-left: var(--sidebar-width); /* Deja espacio al sidebar */
   width: calc(100% - var(--sidebar-width));
   padding: 30px;
 }
@@ -109,6 +117,7 @@ body {
   gap: 20px;
 }
 
+/* Títulos */
 .topbar h1 {
   font-size: 1.8rem;
   color: var(--primary);
@@ -119,6 +128,7 @@ body {
   margin-top: 4px;
 }
 
+/* Parte derecha */
 .topbar-right {
   display: flex;
   align-items: center;
@@ -126,6 +136,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* Input de búsqueda */
 .search-box input {
   border: 1px solid var(--gray-light);
   background: #f8fafc;
@@ -141,6 +152,7 @@ body {
   box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.12);
 }
 
+/* Usuario */
 .user-box {
   display: flex;
   align-items: center;
@@ -157,6 +169,7 @@ body {
   color: var(--gray);
 }
 
+/* Avatar */
 .avatar {
   width: 48px;
   height: 48px;
@@ -176,13 +189,13 @@ body {
   margin-bottom: 40px;
 }
 
-/*todo se adacte al ancho de la pantalla con margenes en lados*/
 .section {
   width: 100%;
   max-width: 1200px;
   margin: auto;
 }
 
+/* Títulos de sección */
 .section-title {
   display: flex;
   justify-content: space-between;
@@ -217,6 +230,7 @@ body {
   gap: 10px;
 }
 
+/* Grid de tarjetas */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -230,6 +244,7 @@ body {
   transition: var(--transition);
 }
 
+/* Tarjetas estadísticas */
 .stat-card:hover {
   transform: translateY(-4px);
 }
@@ -314,14 +329,14 @@ body {
   font-weight: 600;
 }
 
-/* =========================
-   FORMULARIOS
-========================== */
 .form-card h3 {
   margin-bottom: 18px;
   color: var(--primary);
 }
 
+/* =========================
+   FORMULARIOS
+========================== */
 .form-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -394,6 +409,7 @@ body {
   opacity: 0.95;
 }
 
+/* Tipos de botón */
 .btn-save {
   background: var(--accent);
 }
@@ -455,6 +471,7 @@ tbody td {
   vertical-align: middle;
 }
 
+/* Hover fila */
 tbody tr:hover {
   background: #f8fbff;
 }
@@ -466,7 +483,7 @@ tbody tr:hover {
 }
 
 /* =========================
-   BADGES
+   BADGES (ESTADOS)
 ========================== */
 .badge {
   display: inline-block;
@@ -531,6 +548,7 @@ tbody tr:hover {
   }
 }
 
+/* Tablet */
 @media (max-width: 992px) {
   .sidebar {
     width: 220px;
@@ -543,6 +561,7 @@ tbody tr:hover {
   }
 }
 
+/* Móvil */
 @media (max-width: 768px) {
   body {
     flex-direction: column;

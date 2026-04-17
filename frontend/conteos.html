@@ -11,28 +11,45 @@
          CONTEOS
     ========================== -->
     <section id="conteos" class="section">
+
+      <!-- Título del módulo -->
       <div class="section-title">
         <h2>Conteo de Inventario</h2>
       </div>
 
+      <!-- Tarjeta del formulario -->
       <div class="card form-card">
+      
+      <!-- Título del formulario -->
         <h3>Registrar Conteo</h3>
+
+      <!-- Formulario -->
         <form class="form-grid">
+
+      <!-- Campo de fecha -->
           <div class="form-group">
             <label>Fecha</label>
+
+      <!-- Permite seleccionar una fecha -->
             <input type="date" />
           </div>
 
+      <!-- Campo de usuario -->
           <div class="form-group">
             <label>Usuario</label>
+
+      <!-- Lista desplegable de usuarios -->
             <select>
               <option>Administrador</option>
               <option>Operador</option>
             </select>
           </div>
 
+      <!-- Campo de estado -->
           <div class="form-group">
             <label>Estado</label>
+
+      <!-- Lista de estados del conteo -->
             <select>
               <option>ABIERTO</option>
               <option>EN PROCESO</option>
@@ -40,42 +57,65 @@
             </select>
           </div>
 
+      <!-- Campo de observación -->
           <div class="form-group full-width">
             <label>Observación</label>
+
+      <!-- Área de texto para comentarios -->
             <textarea placeholder="Escribe una observación..."></textarea>
           </div>
         </form>
 
+      <!-- Botón de guardar -->
         <div class="form-actions">
           <button class="btn btn-save">Guardar</button>
         </div>
       </div>
 
+      <!-- Tarjeta del listado -->
       <div class="card">
+
+      <!-- Título del listado -->
         <h3>Listado de Conteos</h3>
+
+      <!-- Contenedor responsive -->
         <div class="table-responsive">
+
+      <!-- Tabla de conteos -->
           <table>
+
+      <!-- Encabezado -->
             <thead>
               <tr>
-                <th>ID Conteo</th>
-                <th>Fecha</th>
-                <th>Usuario</th>
-                <th>Estado</th>
-                <th>Observación</th>
-                <th>Acciones</th>
+                <th>ID Conteo</th> <!-- Identificador -->
+                <th>Fecha</th> <!-- Fecha del conteo -->
+                <th>Usuario</th> <!-- Usuario que realizó el conteo -->
+                <th>Estado</th> <!-- Estado del conteo -->
+                <th>Observación</th> <!-- Comentarios -->
+                <th>Acciones</th> <!-- Botones -->
               </tr>
             </thead>
+
+      <!-- Cuerpo de la tabla -->
             <tbody>
+
+      <!-- Registro 1 -->
               <tr>
                 <td>001</td>
                 <td>25/03/2026</td>
                 <td>Administrador</td>
+
+      <!-- Estado con estilo -->
                 <td><span class="badge badge-warning">ABIERTO</span></td>
                 <td>Conteo mensual de bodega</td>
+
+      <!-- Botón de acción -->          
                 <td class="actions">
                   <button class="btn btn-edit">Editar</button>
                 </td>
               </tr>
+
+      <!-- Registro 2 -->
               <tr>
                 <td>002</td>
                 <td>24/03/2026</td>
@@ -86,6 +126,8 @@
                   <button class="btn btn-edit">Editar</button>
                 </td>
               </tr>
+
+      <!-- Registro 3 -->
               <tr>
                 <td>003</td>
                 <td>20/03/2026</td>

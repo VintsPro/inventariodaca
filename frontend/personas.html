@@ -9,34 +9,46 @@
 </head>
 <body>
 
+    <!-- =========================
+         SECCIÓN PERSONAS
+    ========================== -->
     <section id="personas" class="section">
+
+    <!-- Título -->  
       <div class="section-title">
         <h2>Gestión de Personas</h2>
       </div>
 
+      <!-- FORMULARIO -->
       <div class="card form-card" style="margin-bottom: 2rem;">
         <h3>Registrar Persona</h3>
         <form class="form-grid">
+
+      <!-- Documento -->    
           <div class="form-group">
             <label>Número de documento</label>
             <input type="text" placeholder="Ej: 123456789" />
           </div>
 
+      <!-- Nombre -->
           <div class="form-group">
             <label>Nombre completo</label>
             <input type="text" placeholder="Ej: Juan Pérez" />
           </div>
 
+      <!-- Teléfono -->
           <div class="form-group">
             <label>Teléfono</label>
             <input type="text" placeholder="Ej: 3001234567" />
           </div>
 
+      <!-- Correo -->    
           <div class="form-group">
             <label>Correo</label>
             <input type="email" placeholder="Ej: correo@ejemplo.com" />
           </div>
 
+      <!-- Estado -->    
           <div class="form-group">
             <label>Estado</label>
             <select>
@@ -46,17 +58,26 @@
           </div>
         </form>
 
+      <!-- Botones -->  
         <div class="form-actions" style="margin-top: 20px; display: flex; gap: 10px;">
           <button class="btn btn-save">Guardar</button>
+      <!-- Guarda registro -->
+
           <button class="btn btn-edit">Editar</button>
+      <!-- Edita datos -->
+
           <button class="btn btn-delete">Eliminar</button>
+      <!-- Elimina registro -->    
         </div>
       </div>
 
+      <!-- TABLA -->
       <div class="card">
         <h3>Listado de Personas</h3>
         <div class="table-responsive">
           <table>
+
+      <!-- Encabezado -->      
             <thead>
               <tr>
                 <th>Documento</th>
@@ -67,7 +88,11 @@
                 <th>Acciones</th>
               </tr>
             </thead>
+           
+      <!-- Datos -->      
             <tbody>
+
+      <!-- Persona 1 -->        
               <tr>
                 <td>123456789</td>
                 <td>Juan Pérez</td>
@@ -79,6 +104,8 @@
                   <button class="btn btn-delete">Eliminar</button>
                 </td>
               </tr>
+
+      <!-- Persona 2 -->
               <tr>
                 <td>987654321</td>
                 <td>Laura Gómez</td>

@@ -8,26 +8,33 @@
 </head>
 <body>
      <!-- =========================
-         PRODUCTOS
+         SECCIÓN PRODUCTOS
     ========================== -->
     <section id="productos" class="section">
+
+     <!-- Título --> 
       <div class="section-title">
         <h2>Gestión de Productos</h2>
       </div>
 
+     <!-- FORMULARIO -->
       <div class="card form-card">
         <h3>Registrar Producto</h3>
         <form class="form-grid">
+
+     <!-- Código -->     
           <div class="form-group">
             <label>Código</label>
             <input type="text" placeholder="Ej: P001" />
           </div>
 
+     <!-- Nombre -->     
           <div class="form-group">
             <label>Nombre del producto</label>
             <input type="text" placeholder="Ej: Mouse inalámbrico" />
           </div>
 
+     <!-- Categoría -->
           <div class="form-group">
             <label>Categoría</label>
             <select>
@@ -37,11 +44,13 @@
             </select>
           </div>
 
+       <!-- Stock mínimo -->   
           <div class="form-group">
             <label>Stock mínimo</label>
             <input type="number" placeholder="Ej: 5" />
           </div>
 
+       <!-- Estado -->   
           <div class="form-group">
             <label>Estado</label>
             <select>
@@ -51,17 +60,26 @@
           </div>
         </form>
 
+       <!-- BOTONES --> 
         <div class="form-actions">
           <button class="btn btn-save">Guardar</button>
+       <!-- Crear producto -->
+
           <button class="btn btn-edit">Editar</button>
+       <!-- Modificar producto -->
+
           <button class="btn btn-delete">Eliminar</button>
+       <!-- Eliminar producto -->   
         </div>
       </div>
 
+       <!-- TABLA -->   
       <div class="card">
         <h3>Listado de Productos</h3>
         <div class="table-responsive">
           <table>
+
+       <!-- Encabezados -->     
             <thead>
               <tr>
                 <th>Código</th>
@@ -72,7 +90,11 @@
                 <th>Acciones</th>
               </tr>
             </thead>
+
+       <!-- Datos -->     
             <tbody>
+
+       <!-- Producto de ejemplo -->       
               <tr>
                 <td>P001</td>
                 <td>Teclado Mecánico</td>

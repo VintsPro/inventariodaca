@@ -4,39 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inventario Daca</title>
+  <!-- Título que aparece en la pestaña del navegador -->
+    
     <link rel="stylesheet" href="style.css" />
+  <!-- Archivo de estilos principal -->
+
     <style>
-      /* Estilo básico para que el iframe ocupe todo el espacio */
+      /* Contenedor principal donde se carga el contenido */
       .main-content {
-        padding: 0; /* Quitamos padding para que el iframe llene el espacio */
-        overflow: hidden;
-      }
-      iframe {
-        width: 100%;
-        height: calc(100vh - 70px); /* Ajusta restando la altura de tu topbar */
-        border: none;
+        padding: 0; /* Quitamos espacio interno */
+        overflow: hidden; /* Evita scroll innecesario */
       }
 
-      /* Dale flexibilidad al iframe */
+  /* Estilo del iframe (pantalla donde cargan las páginas) */    
       iframe {
-        flex-grow: 1; /* Esto hace que el iframe "empuje" hasta el fondo */
+        width: 100%; /* Ocupa todo el ancho */
+        height: calc(100vh - 70px); 
+        /* Altura total de la pantalla menos la barra superior */
+
+        border: none; /* Quita el borde */
+      }
+
+      /* Segunda definición del iframe (mejora visual) */
+      iframe {
+        flex-grow: 1; /* Hace que crezca y llene el espacio */
         width: 100%;
         border: none;
         border-radius: var(
           --radius
-        ); /* Para que mantenga la estética de tus tarjetas */
+        ); /* Mantiene bordes redondeados según tu diseño */
         background: transparent;
       }
     </style>
   </head>
   <body>
+
+    <!-- =========================
+         SIDEBAR (MENÚ LATERAL)
+    ========================== -->
     <aside class="sidebar">
+
+    <!-- Parte superior del menú -->
       <div class="sidebar-top">
         <h2>📦 Inventario DACA</h2>
         <p>Panel de gestión</p>
       </div>
 
+    <!-- Menú de navegación -->  
       <nav class="menu">
+
+    <!-- Cada enlace carga una página dentro del iframe -->    
         <a
           href="dashboard_home.html" target="contenedor" class="menu-item active"
           >🏠 Dashboard</a
@@ -74,26 +91,45 @@
       </nav>
     </aside>
 
+  <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================== -->  
     <main class="main-content">
+
+  <!-- Barra superior -->    
       <header class="topbar">
+
+  <!-- Título del sistema -->      
         <div>
           <h1>Inventario DACA</h1>
           <p>Bienvenido al sistema de control</p>
         </div>
+
+  <!-- Información del usuario -->      
         <div class="topbar-right">
           <div class="user-box">
             <div class="user-info">
               <h4>Vicente Petro</h4>
               <span>Administrador</span>
               <br>
+
+  <!-- Botón para cerrar sesión -->            
               <button class="btn btn-cerrarcesion " onclick="window.location.href='index.html'">cerrar cesion</button>
             </div>
+
+  <!-- Avatar del usuario -->          
             <div class="avatar">VP</div>
           </div>
         </div>
       </header>
 
+  <!-- IFRAME: aquí se cargan todas las páginas -->    
       <iframe src="dashboard_home.html" name="contenedor"></iframe>
+  <!-- 
+        - src: página inicial que se carga
+        - name: permite que los links del menú carguen aquí usando target="contenedor"
+      -->
+
 
     </main>
   </body>

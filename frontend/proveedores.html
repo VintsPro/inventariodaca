@@ -8,38 +8,50 @@
 </head>
 <body>
      <!-- =========================
-         PROVEEDORES
+         SECCIÓN PROVEEDORES
     ========================== -->
     <section id="proveedores" class="section">
+
+     <!-- Título --> 
       <div class="section-title">
         <h2>Gestión de Proveedores</h2>
       </div>
 
+     <!-- FORMULARIO --> 
       <div class="card form-card">
         <h3>Registrar Proveedor</h3>
+
+     <!-- Selección de persona -->   
         <form class="form-grid">
           <div class="form-group">
             <label>Persona</label>
             <select>
               <option>Seleccionar persona</option>
             </select>
+       <!-- Aquí deberías cargar las personas registradas -->     
           </div>
 
+       <!-- Empresa -->   
           <div class="form-group">
             <label>Empresa</label>
             <input type="text" placeholder="Ej: Distribuciones DACA" />
           </div>
         </form>
 
+       <!-- Botón guardar --> 
         <div class="form-actions">
           <button class="btn btn-save">Guardar</button>
+       <!-- Guarda el proveedor -->   
         </div>
       </div>
 
+       <!-- TABLA --> 
       <div class="card">
         <h3>Listado de Proveedores</h3>
         <div class="table-responsive">
           <table>
+
+       <!-- Encabezados -->     
             <thead>
               <tr>
                 <th>Empresa</th>
@@ -49,7 +61,11 @@
                 <th>Acciones</th>
               </tr>
             </thead>
+       
+       <!-- Datos -->
             <tbody>
+
+       <!-- Ejemplo -->       
               <tr>
                 <td>Distribuciones DACA</td>
                 <td>Carlos Ramírez</td>

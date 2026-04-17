@@ -10,29 +10,40 @@
      <!-- =========================
          CATEGORÍAS
     ========================== -->
+
+       <!-- Sección principal de categorías -->
     <section id="categorias" class="section">
+
+       <!-- Título de la sección -->
       <div class="section-title">
         <h2>Gestión de Categorías</h2>
       </div>
 
+       <!-- Formulario para registrar categorías -->
       <div class="card form-card">
         <h3>Registrar Categoría</h3>
         <form class="form-grid">
           <div class="form-group">
+
+       <!-- Campo donde se escribe el nombre -->
             <label>Nombre de categoría</label>
             <input type="text" placeholder="Ej: Electrónica" />
           </div>
         </form>
 
+       <!-- Botón para guardar -->
         <div class="form-actions">
           <button class="btn btn-save">Guardar</button>
         </div>
       </div>
-
+       
+       <!-- Listado de categorías -->
       <div class="card">
         <h3>Listado de Categorías</h3>
         <div class="table-responsive">
           <table>
+
+       <!-- Encabezados -->
             <thead>
               <tr>
                 <th>ID</th>
@@ -40,10 +51,14 @@
                 <th>Estado / Acciones</th>
               </tr>
             </thead>
+
+       <!-- Datos -->    
             <tbody>
               <tr>
                 <td>1</td>
                 <td>Electrónica</td>
+
+       <!-- Estado y acciones -->         
                 <td class="actions">
                   <span class="badge badge-success">Activa</span>
                   <button class="btn btn-edit">Editar</button>

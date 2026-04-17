@@ -8,46 +8,72 @@
 </head>
 <body>
      <!-- =========================
-         INVENTARIO
+         SELECIÓN INVENTARIO
     ========================== -->
     <section id="inventario" class="section">
+
+    <!-- Título de la sección -->  
       <div class="section-title">
         <h2>Control de Inventario</h2>
       </div>
 
+    <!-- Tarjeta con formulario -->
       <div class="card form-card">
         <h3>Filtros / Registro de Inventario</h3>
+
+    <!-- Formulario -->    
         <form class="form-grid">
+
+    <!-- Campo: Producto -->      
           <div class="form-group">
             <label>Producto</label>
             <select>
               <option>Seleccionar producto</option>
             </select>
+
+    <!-- Aquí deberían cargarse los productos dinámicamente -->        
           </div>
 
+    <!-- Campo: Ubicación -->
           <div class="form-group">
             <label>Ubicación</label>
             <select>
               <option>Seleccionar ubicación</option>
             </select>
+
+    <!-- Lista de ubicaciones -->        
           </div>
 
+    <!-- Campo: Cantidad -->      
           <div class="form-group">
             <label>Cantidad</label>
             <input type="number" placeholder="Ej: 15" />
+
+    <!-- Permite ingresar números -->        
           </div>
         </form>
 
+    <!-- Botones de acción -->    
         <div class="form-actions">
           <button class="btn btn-save">Guardar</button>
+    <!-- Guardar registro -->
+
           <button class="btn btn-filter">Filtrar</button>
+    <!-- Aplicar filtros -->      
         </div>
       </div>
 
+    <!-- Tarjeta con tabla -->  
       <div class="card">
         <h3>Listado de Inventario</h3>
+    
+    <!-- Contenedor responsive -->
         <div class="table-responsive">
+
+    <!-- Tabla de datos -->      
           <table>
+
+    <!-- Encabezado -->        
             <thead>
               <tr>
                 <th>Producto</th>
@@ -56,24 +82,38 @@
                 <th>Estado de stock</th>
               </tr>
             </thead>
+
+    <!-- Datos -->        
             <tbody>
+
+    <!-- Fila 1 -->          
               <tr>
                 <td>Teclado Mecánico</td>
                 <td>Bodega A</td>
                 <td>25</td>
-                <td><span class="badge badge-success">Normal</span></td>
+                <td><span class="badge badge-success">Normal</span>
+    <!-- Stock suficiente -->              
+                </td>
               </tr>
+
+    <!-- Fila 2 -->          
               <tr>
                 <td>Mouse Inalámbrico</td>
                 <td>Bodega B</td>
                 <td>7</td>
-                <td><span class="badge badge-warning">Bajo</span></td>
+                <td><span class="badge badge-warning">Bajo</span>
+    <!-- Stock bajo -->            
+                </td>
               </tr>
+
+    <!-- Fila 3 -->          
               <tr>
                 <td>Monitor 24"</td>
                 <td>Estante 2</td>
                 <td>3</td>
-                <td><span class="badge badge-danger">Crítico</span></td>
+                <td><span class="badge badge-danger">Crítico</span>
+    <!-- Stock crítico -->              
+                </td>
               </tr>
             </tbody>
           </table>

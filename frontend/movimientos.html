@@ -8,70 +8,86 @@
 </head>
 <body>
     <!-- =========================
-         MOVIMIENTOS
+         SECCIÓN MOVIMIENTOS
     ========================== -->
     <section id="movimientos" class="section">
+
+    <!-- Título -->  
       <div class="section-title">
         <h2>Movimientos de Inventario</h2>
       </div>
 
+    <!-- FORMULARIO -->  
       <div class="card form-card">
         <h3>Registrar Movimiento</h3>
         <form class="form-grid">
+
+    <!-- Producto -->      
           <div class="form-group">
             <label>Producto</label>
             <select><option>Seleccionar producto</option></select>
           </div>
 
+    <!-- Ubicación -->      
           <div class="form-group">
             <label>Ubicación</label>
             <select><option>Seleccionar ubicación</option></select>
           </div>
 
+    <!-- Tipo de movimiento -->      
           <div class="form-group">
             <label>Tipo de movimiento</label>
             <select>
-              <option>Entrada</option>
-              <option>Salida</option>
-              <option>Ajuste</option>
+              <option>Entrada</option> <!-- Suma al inventario -->
+              <option>Salida</option>  <!-- Resta al inventario -->
+              <option>Ajuste</option>  <!-- Corrección manual -->
             </select>
           </div>
 
+    <!-- Cantidad -->      
           <div class="form-group">
             <label>Cantidad</label>
             <input type="number" placeholder="Ej: 10" />
           </div>
 
+    <!-- Usuario -->      
           <div class="form-group">
             <label>Usuario</label>
             <select><option>Administrador</option></select>
           </div>
 
+    <!-- Proveedor -->      
           <div class="form-group">
             <label>Proveedor</label>
             <select><option>Distribuciones DACA</option></select>
           </div>
 
+    <!-- Conteo -->      
           <div class="form-group">
             <label>Conteo</label>
             <select><option>Conteo #001</option></select>
           </div>
 
+    <!-- Observación -->      
           <div class="form-group full-width">
             <label>Observación</label>
             <textarea placeholder="Escribe una observación..."></textarea>
           </div>
         </form>
 
+    <!-- Botón guardar -->    
         <div class="form-actions">
           <button class="btn btn-save">Guardar</button>
         </div>
       </div>
 
+    <!-- TABLA DE HISTORIAL -->  
       <div class="card">
         <h3>Historial de Movimientos</h3>
         <div class="table-responsive">
           <table>
+
+    <!-- Encabezados -->        
             <thead>
               <tr>
                 <th>Fecha</th>
@@ -83,7 +99,11 @@
                 <th>Observación</th>
               </tr>
             </thead>
+
+    <!-- Datos -->        
             <tbody>
+
+    <!-- Movimiento 1 -->          
               <tr>
                 <td>25/03/2026</td>
                 <td>SSD 1TB</td>
@@ -93,6 +113,8 @@
                 <td>Administrador</td>
                 <td>Ingreso por compra</td>
               </tr>
+
+    <!-- Movimiento 2 -->          
               <tr>
                 <td>25/03/2026</td>
                 <td>Mouse</td>
@@ -102,6 +124,8 @@
                 <td>Operador</td>
                 <td>Salida por entrega interna</td>
               </tr>
+
+    <!-- Movimiento 3 -->          
               <tr>
                 <td>25/03/2026</td>
                 <td>Monitor</td>
